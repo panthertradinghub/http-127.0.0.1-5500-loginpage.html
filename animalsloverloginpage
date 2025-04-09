@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animalslover Login</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .pet-image {
+    width: 60%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Right Panel */
+  .right-panel {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-box {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .form-box h2 {
+    color: #137B13;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .form-box p a {
+    color: #137B13;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .google-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .divider hr {
+    flex: 1;
+    border: none;
+    height: 3px;
+    background: #137B13;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #eee;
+  }
+  
+  .forgot-link {
+    display: block;
+    text-align: right;
+    color: #137B13;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #137B13;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="dogsandcat.jpeg">
+    </div>
+
+    <div class="right-panel">
+      <div class="form-box">
+        <h2>Welcome Back</h2>
+        <p>Don't have an account? <a href>Sign Up.</a></p>
+
+        <button class="google-btn">Continue with Google</button>
+
+        <div class="divider">
+          <hr/><span>Or continue with username/email</span><hr/>
+        </div>
+
+        <form>
+          <input type="text" placeholder="Username or email address" required />
+          <input type="password" placeholder="Enter Password" required />
+          <a href class="forgot-link">Forgot Password</a>
+          <button type="submit" class="signin-btn">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
